@@ -1,0 +1,9 @@
+.lake/
+.toolchain/
+reports/*.log
+__pycache__/
+env.sh
+scripts/bootstrap_geometry.py
+scripts/bootstrap_cover.py
+reports/palomar-llms-current.txt
+reports/development-verification.json

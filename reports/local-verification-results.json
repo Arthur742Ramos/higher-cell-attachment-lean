@@ -1,0 +1,74 @@
+{
+  "lean_toolchain": "leanprover/lean4:v4.35.0-rc2",
+  "lean_commit": "11acb17ec6b07a8f9e9173e6845197929540936b",
+  "mathlib_commit": "065356127b1dc0016f66b7283ce0ce2c4055aa55",
+  "solution_sha256": "19766fec40044fbbfb001248a277204681bc0de358f4f6b6183b2da80659d462",
+  "challenge_sha256": "6b8881b81d2c3e317770806923269ee15c4aa01dde0e36f3b73f3b41c4153c2f",
+  "normal_lake_build": {
+    "status": "pass",
+    "exit_code": 0,
+    "jobs": 3401
+  },
+  "standalone_solution_build": {
+    "status": "pass",
+    "exit_code": 0
+  },
+  "standalone_challenge_build": {
+    "status": "pass",
+    "intentional_theorem_holes": 1
+  },
+  "complete_axiom_closures": {
+    "status": "pass",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "targets_checked": 6
+  },
+  "leanchecker": {
+    "status": "pass",
+    "exit_code": 0
+  },
+  "leanchecker_paranoid": {
+    "status": "pass",
+    "exit_code": 0
+  },
+  "nanoda": {
+    "status": "pass",
+    "exit_code": 0,
+    "declarations": 39929,
+    "note": "No typechecker errors; one nonblocking axiom pretty-printer warning"
+  },
+  "conron": {
+    "status": "pass",
+    "exit_code": 0,
+    "mode": "verified",
+    "declarations": 38092,
+    "workers": 1
+  },
+  "challenge_export_sha256": "9b0f3b0a17e02291e74cc10dc48d9ef9a61d6b87c342711bf0c505217522d598",
+  "solution_export_sha256": "1db6b84867d1d4b44c7a0e419c6d7efcc4384d66ea82f31cec91ecac7b32464f",
+  "comparator_from_export": {
+    "status": "blocked",
+    "exit_code": 1,
+    "stage": "kernel sandbox launch",
+    "blocker": "bwrap cannot create NETLINK_ROUTE socket: Operation not permitted",
+    "comparison_note": "Pinned Comparator progressed past declaration/type/body and axiom comparison to its kernel stage; this does not constitute an accepted overall verdict or isolated-build provenance"
+  },
+  "official_full_mechanical": {
+    "status": "not_run"
+  },
+  "trusted_challenge_render": {
+    "status": "not_run"
+  },
+  "registry_submission": {
+    "status": "not_submitted"
+  },
+  "lean4lean": {
+    "status": "blocked",
+    "exit_code": 1,
+    "stage": "reading module header",
+    "blocker": "Bundled lean4lean reports incompatible Solution.olean header before checking declarations"
+  }
+}

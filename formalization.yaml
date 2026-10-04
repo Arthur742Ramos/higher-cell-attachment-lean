@@ -1,0 +1,112 @@
+version: "v0.4"
+project:
+  name: "Fundamental Groups of Arbitrary Higher-Cell Attachments"
+  description: >-
+    Higher-cell attachment invariance for ordinary topological fundamental groups.
+    For any path-connected topological space X, any basepoint, an index type in
+    an independent universe, independently varying cell dimensions at least three,
+    and arbitrary continuous unit-sphere attaching maps, the genuine adjunction
+    quotient of X and the coproduct of closed Euclidean unit balls is constructed
+    with its quotient topology. The actual inclusion-induced fundamental-group
+    homomorphism is bijective and is the underlying homomorphism of the displayed
+    multiplicative equivalence. Mixed dimensions and the empty family are included.
+    No finiteness, countability, CW, separation or local-connectivity hypotheses
+    are added, and no retraction, simple-connectivity or kernel oracle is assumed.
+  authors: ["Arthur Freitas Ramos", "David Barros Hulak", "Ruy Jose Guerra Barretto de Queiroz"]
+  responsible_maintainers: ["Arthur Freitas Ramos"]
+  license: "Apache-2.0"
+classification:
+  arxiv: ["math.AT", "math.CT"]
+  msc2020: ["55Q05", "18B40"]
+sources:
+  - title: "Algebraic Topology"
+    authors: ["Allen Hatcher"]
+    type: book
+    id: "https://pi.math.cornell.edu/~hatcher/AT/AT..pdf#page=62"
+    location: "Section 1.2, Exercise 6, printed page 53, live Cornell edition"
+    relationship: formalizes
+    note: >-
+      The source states fixed-dimensional attachment invariance. This theorem
+      explicitly strengthens it to mixed dimensions. The exercise's separate
+      discrete-complement application is outside the formalized scope.
+      No mathematical novelty claim is made.
+    author_endorsement: not-contacted
+  - title: "The Directed Van Kampen Theorem in Lean"
+    authors: ["Henning Basold", "Peter Bruin", "Dominique Lawson"]
+    type: "conference paper and formalization"
+    id: "10.4230/LIPIcs.ITP.2024.8"
+    relationship: builds-on
+    location: "Credited path-subdivision and homotopy-grid infrastructure through the ordinary groupoid bridge"
+    note: "Inherited source and MIT notices are preserved; no independent authorship is claimed."
+    author_endorsement: not-contacted
+related_formalizations:
+  - id: "https://github.com/Arthur742Ramos/cell-attachment-lean/tree/8883b95e8ace951e27c2bc86f95d02397787dd59"
+    relationship: builds-on
+    note: >-
+      The actual adjunction quotient, open-cover and jointly continuous radial
+      geometry are generalized from complex two-cells to dependent Euclidean
+      balls. Its abstract vertex-group quotient bridge is reused unchanged.
+  - id: "https://github.com/Arthur742Ramos/classical-svk-lean/tree/874680e16db88b4a41daadf56eafbac79fd2f748"
+    relationship: builds-on
+    note: "Exact accepted ordinary all-object fundamental-groupoid open-cover pushout infrastructure."
+  - id: "https://github.com/Sebi-Kumar/mathlib4/tree/037ad801e1e5a5b7aa1750957c07f7769812effc"
+    relationship: builds-on
+    note: >-
+      Sebastian Kumar's unmerged mathlib PR 28246 supplies the simply-connected
+      sphere theorem and its required loop-factorization lemma. Only their required
+      closure is vendored, with documented narrow pin-compatibility adaptations,
+      original Apache-2.0 notices and exact SHA provenance. No sphere novelty is claimed.
+  - id: "https://github.com/Dominique-Lawson/Directed-Topology-Lean-4/tree/009529606c66d37ef93b4b81b8587f71ce4d2c56"
+    relationship: builds-on
+    note: "Basold-Bruin-Lawson subdivision helpers retain MIT license and original source credits."
+status:
+  scope: >-
+    Full mixed-dimension arbitrary-family genuine quotient and actual inclusion
+    map, independent space and index universes, bijection and compatible group
+    equivalence. Exact-toolchain Lake build, modular/standalone replay and complete
+    standard-only axiom audits passed; direct Lean/NanoDa/verified-ConRon kernels also passed; official hosted gates are separate.
+  sorry_count: 0
+  sorry_in_definitions: 0
+  axioms: ["propext", "Classical.choice", "Quot.sound"]
+automation:
+  methods:
+    - method: agent
+      models: ["GPT-6.1 Sol, High reasoning"]
+      framework: "Lean 4 and mathlib"
+      tool_setup: "AI-assisted proof construction, credited source reuse, kernel-checked tactics, separate source review and fresh exact-toolchain verification."
+  spend_usd: "not tracked"
+  notes: >-
+    Human direction selected and authorized the topology target. AI-assisted
+    construction and reviews are disclosed without assigning authorship to the
+    assistant. Challenge has one deliberate target theorem hole, excluded from
+    Solution's proof admission counts. After execution-host replacement, recorded
+    construction commands and immutable inputs were reconstructed and all proof
+    checks rerun; no pre-loss checksum equivalence is claimed.
+fidelity:
+  divergences: >-
+    Cell dimensions vary across the arbitrary family, strengthening the source's
+    fixed-dimension statement. There are no added mathematical hypotheses. Actual
+    unit spheres and closed balls lie in EuclideanSpace over Fin (d i), using a
+    dependent topological coproduct and boundary-generated quotient topology.
+    The all-object groupoid pushout handles disconnected overlaps. The separate
+    complement-of-discrete-subspace application is not claimed.
+review:
+  status: "Independent automated source/statement/standalone fidelity review passed; fresh full Lake build, modular/standalone compilation, complete standard-only axiom audits and Lean default/paranoid kernel replay passed. NanoDa and verified ConRon also passed. Overall local Comparator is blocked at the bubblewrap kernel-sandbox launch; a separate optional Lean4Lean module probe is blocked by an incompatible header before checking declarations; official hosted gates remain unperformed."
+  notes: >-
+    Review covers actual quotient topology, joint product-quotient homotopy
+    continuity, dependent component indices, inclusion-map compatibility,
+    independent universes, mixed/empty families and accurate upstream provenance.
+    No human review, worldwide priority, registry submission or acceptance is asserted.
+alignment:
+  namespace: "HigherCellAttachment"
+  statements:
+    - source: "Hatcher Section 1.2 Exercise 6, printed page 53, attachment-invariance part"
+      lean: "HigherCellAttachment.higher_cell_attachment"
+      module: "Solution"
+      status: proved
+      note: "Mixed-dimension strengthening with arbitrary family and an equivalence whose homomorphism is exactly the actual inclusion map."
+acknowledgements: >-
+  Allen Hatcher for the classical exposition; Sebastian Kumar for the credited
+  sphere and path-factorization proof; Basold, Bruin and Lawson for subdivision;
+  the accepted Cell attachment and ordinary SVK formalizations; Mathlib and Lean
+  contributors. Arthur Freitas Ramos is the sole responsible maintainer.

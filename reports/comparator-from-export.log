@@ -1,0 +1,7 @@
+Running nanoda kernel on solution
+bwrap: loopback: Failed to create NETLINK_ROUTE socket: Operation not permitted
+nanoda kernel rejected the solution
+Running Lean default kernel on solution
+bwrap: loopback: Failed to create NETLINK_ROUTE socket: Operation not permitted
+error: nanoda exited with 1
+Lean default kernel rejected the solution

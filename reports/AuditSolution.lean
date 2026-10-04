@@ -1,0 +1,9 @@
+module
+
+import Solution
+#print axioms HigherCellAttachment.higher_cell_attachment
+#print axioms HigherCellAttachment.inclusionPi1_bijective
+#print axioms HigherCellAttachment.neighborhood_inclusion_bijective
+#print axioms HigherCellAttachment.neighborhoodRadial_continuous
+#print axioms HigherCellAttachment.coproductFundamentalGroupEquiv
+#print axioms HigherCellAttachment.Sphere.simplyConnectedSpace

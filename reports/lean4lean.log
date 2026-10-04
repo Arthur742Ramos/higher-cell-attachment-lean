@@ -1,0 +1,2 @@
+lean4lean found a problem in Solution:
+failed to read file '/workspace/shared/higher-cell-attachment-lean/.lake/build/lib/lean/Solution.olean', incompatible header
