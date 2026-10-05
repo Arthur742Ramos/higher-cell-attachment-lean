@@ -1,7 +1,8 @@
 # Source provenance
 
 First-party author convention: Arthur Freitas Ramos, David Barros Hulak,
-Ruy Jose Guerra Barretto de Queiroz. Arthur is the sole responsible maintainer.
+Ruy Jose Guerra Barretto de Queiroz. Responsible maintainers: Arthur Freitas Ramos,
+David Barros Hulak, Ruy Jose Guerra Barretto de Queiroz.
 No invented contributor roles or mathematical novelty are claimed.
 
 The actual quotient, open-cover and jointly continuous quotient-product radial

@@ -13,7 +13,7 @@ project:
     No finiteness, countability, CW, separation or local-connectivity hypotheses
     are added, and no retraction, simple-connectivity or kernel oracle is assumed.
   authors: ["Arthur Freitas Ramos", "David Barros Hulak", "Ruy Jose Guerra Barretto de Queiroz"]
-  responsible_maintainers: ["Arthur Freitas Ramos"]
+  responsible_maintainers: ["Arthur Freitas Ramos", "David Barros Hulak", "Ruy Jose Guerra Barretto de Queiroz"]
   license: "Apache-2.0"
 classification:
   arxiv: ["math.AT", "math.CT"]
@@ -109,4 +109,5 @@ acknowledgements: >-
   Allen Hatcher for the classical exposition; Sebastian Kumar for the credited
   sphere and path-factorization proof; Basold, Bruin and Lawson for subdivision;
   the accepted Cell attachment and ordinary SVK formalizations; Mathlib and Lean
-  contributors. Arthur Freitas Ramos is the sole responsible maintainer.
+  contributors. Responsible maintainers: Arthur Freitas Ramos, David Barros Hulak,
+  Ruy Jose Guerra Barretto de Queiroz.

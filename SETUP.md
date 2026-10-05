@@ -65,8 +65,8 @@ comparison is not equivalent to the required full reusable workflow.
 The live agent protocol requires user agreement on the repository, exact
 40-character source commit, comparator.json and authorization-relationship claim
 about the user before agent-driven intake. The established author list is Arthur
-Freitas Ramos, David Barros Hulak and Ruy Jose Guerra Barretto de Queiroz; Arthur
-is sole responsible maintainer. Include these exact metadata facts in the frozen
+Freitas Ramos, David Barros Hulak and Ruy Jose Guerra Barretto de Queiroz; the responsible maintainers are Arthur
+Freitas Ramos, David Barros Hulak and Ruy Jose Guerra Barretto de Queiroz. Include these exact metadata facts in the frozen
 review. Do not open intake while waiting for that agreement or before hosted pass.
 
 The permitted agent CLI proof uses a new public repository tag plus a fresh
